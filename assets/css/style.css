@@ -1,4 +1,30 @@
 body {
     margin:0;
-    background-color:blue;
+}
+/* CAROUSEL */
+
+.slider-img {
+    background-size: contain;
+}
+
+/* --------------- NAVBAR --------------- */
+
+.navbar-nav {
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar-collapse {
+    text-align: center;
+}
+.container {
+    width:100vw;
+    min-height: 100vh;
+    background-color:gray;
+}
+
+.section {
+    border:1px solid black;
+    background-color: pink;
+    height: 100px;
 }
