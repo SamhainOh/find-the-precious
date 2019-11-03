@@ -1,30 +1,184 @@
 body {
-    margin:0;
+  margin: 0;
 }
+
+h2 {
+  font-family: 'Abaddon';
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+h3, h4 {
+  font-family: 'Abaddon';
+
+}
+
+p {
+  font-family: 'NordicaHairline';
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  /* border:1px solid black;
+    background-color: whitesmoke; */
+}
+
+.section {
+  margin-top: 40px;
+}
+
 /* CAROUSEL */
 
 .slider-img {
-    background-size: contain;
+  background-size: contain;
 }
 
 /* --------------- NAVBAR --------------- */
 
 .navbar-nav {
-    width:100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-.navbar-collapse {
-    text-align: center;
-}
-.container {
-    width:100vw;
-    min-height: 100vh;
-    background-color:gray;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'NordicaHairline';
+  font-size: 1.8em;
+  margin-top: 40px;
 }
 
-.section {
-    border:1px solid black;
-    background-color: pink;
-    height: 100px;
+.nav-link {
+  color: black;
+}
+
+.nav-link:hover {
+  border-bottom: 3px solid rgb(87, 65, 234);
+  color: rgb(87, 65, 234);
+  text-shadow: 0 0 0.15em rgba(87, 65, 234, .5);
+
+}
+
+nav-item:hover {
+  box-shadow: 0 0 40px rgba(87, 65, 234, .5);
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+/* ----------------FELLOWS SECTION ----------------- */
+
+.intro {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.row-fellows {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.card-fellows {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.card {
+  margin: auto;
+}
+
+.card-title {
+  font-family: 'Abaddon';
+  text-align: center;
+}
+.btn {
+  width: 10rem;
+  margin: 30px auto;
+  font-family: 'NordicaHairline';
+}
+
+/* ------------- RING SECTION --------------- */
+
+.table {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.row-gollum {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.title-gollum,
+.txt-gollum {
+  display: flex;
+  align-items: center;
+}
+
+/* --------------- HUNTERS SECTION --------------- */
+
+.hunter-flow {
+  width: 60vw;
+  margin: 80px auto;
+  overflow: scroll;
+  height: 400px;
+  /* box-shadow: -1px 31px 112px -68px rgba(0,0,0,0.57); */
+  /* border: 1px solid #707372; */
+  padding-top: 30px;
+}
+
+.row-hunters {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.col-8 {
+  padding-top: 20px;
+}
+
+/* --------------- REWARDS SECTION --------------- */
+
+.reward-title {
+  margin:10px;
+  text-align: center;
+}
+
+
+
+.army-title {
+  margin-bottom:40px;
+}
+.row-army {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.google-play {
+  height: 100px;
+  border:1px solid black;
+} 
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-icone {
+  margin: 10px;
+}
+
+form {
+  width: 50vw;
+  margin: auto;
 }
