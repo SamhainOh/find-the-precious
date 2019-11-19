@@ -4,37 +4,70 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Abaddon';
-  font-weight: bold;
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Cinzel';
   text-align: center;
 }
 
-h2 {
+h1 {
+  letter-spacing: -0.2rem;
+  color: white;
+  font-family: 'Cinzel';
   font-size: 4vw;
+}
+
+h2 {
+  font-size: 3.2vw;
+  font-weight: bold;
+  text-align: center;
+
 }
 
 h3,
 .navbar-nav {
-  font-size: 3vw;
+  font-size: 2.4vw;
 }
 
-h4{
+h4 {
   margin-top: 24px;
   font-size: 2vw;
 }
 
+h5 {
+  font-size: 1.6vw;
+}
+
 p {
-  font-family: 'NordicaThin';
-  font-size: 1vw;
+  font-size: 1.4vw;
+}
+
+p,
+ul,
+li {
+  font-family: 'CormorantGaramond-SemiBold';
 }
 
 ul,
 li {
   list-style: none;
-  padding-left: 0;
 }
 
+input {
+  margin: 20px;
+}
+
+.number {
+  font-family: 'CormorantGaramond-SemiBoldItalic';
+  font-size: 4.2vw;
+}
+
+.quote {
+  font-family: 'CormorantGaramond-SemiBoldItalic';
+  font-size: 2.4vw;
+}
 .container {
   width: 100vw;
   min-height: 100vh;
@@ -42,15 +75,16 @@ li {
 }
 
 .section {
-  margin-top: 4rem;
+  margin:4rem 0 4rem 0;
 }
 
-.intro { 
+.intro {
   color: #566361;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+  font-family: 'CormorantGaramond-SemiBoldItalic';
+  text-align: center;
 }
 
-.intro, 
 .navbar-nav,
 .table {
   font-family: 'Cinzel';
@@ -58,21 +92,20 @@ li {
 
 /* --------------- CAROUSEL & TITLE --------------- */
 
-.precious {
-  font-size: 8vw;
-  letter-spacing: -0.3rem;
-  color:white;
-  text-shadow: 1px 4px 0 #bab9b9, 1px 13px 5px #aba8a8;
-}
-
 .slider-img {
   border: 1px solid black;
 }
 
+
 /* --------------- NAVBAR --------------- */
+.navbar-brand {
+  width: 18vw;
+
+}
 
 .nav-link {
-  color:white !important;
+  color: white !important;
+  font-family: 'Cinzel';
 }
 
 .navbar-collapse {
@@ -94,75 +127,82 @@ li {
 .card {
   border: none;
 }
-.card-title {
-  font-family: 'Abaddon';
-  text-align: center;
+
+.card-footer {
+  background-color: white;
+  padding: 0;
+  border: none;
 }
 
 .btn {
-  width: 10rem;
-  font-family: 'NordicaHairline';
+  width: 8rem;
+  font-family: 'NordicaThin';
   display: block;
+  background-color: #566361;
+  color: black;
+  font-weight: bolder;
+}
+
+.modal-content {
+  background-color: black;
+  color:#566361;
+}
+
+
+.card-text-fellows {
+  position: absolute;
+  top: 25%;
+  color: transparent;
+}
+
+.card-title-fellows {
+  position: absolute;
+  top: 10%;
+  left:22%;
+  color: white;
 }
 
 /* ------------- RING SECTION --------------- */
 
-.table {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
 .row-gollum {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  border:1px solid black;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
 }
 
-.title-gollum,
 .txt-gollum {
   display: flex;
-  align-items: center;
+  flex-flow: column wrap;
 }
-.col-3 {
-  padding: 20px;
-  border: 1px solid black;
-}
+
 /* --------------- HUNTERS SECTION --------------- */
 
-.row-hunter-section{
-  display: flex;
-  flex-direction: row;
-  padding: 16px;
-  align-items: space-between;
-  
-}
-.hunter-flow {
-  width: 60vw;
-  height: 32rem;
-  overflow: scroll;  
+.card-img-top {
+  width:100%;
+  height: 40vh;
+  object-fit: cover;
 }
 
-.row-hunters {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 20px;
+.col-3-sm-12 {
+  margin: 15px;
 }
-
-.rating-star{
-  font-size: 2rem;
-  width: 2rem;
-  height: 2rem;
+.rewards {
+  text-align: justify;
+}
+.rating-star {
+  font-size: 1rem;
+  width: 1rem;
+  height: 1rem;
   padding: 0;
   position: relative;
   display: block;
-  float:left;
+  float: left;
 }
 
 .full-star:before {
-  color:purple;
+  color: peru;
   content: "\2605";
   position: absolute;
   left: 0;
@@ -177,7 +217,7 @@ li {
 }
 
 .half-star:before {
-  color: purple;
+  color: peru;
   content: "\2605";
   width: 50%;
   position: absolute;
@@ -194,67 +234,178 @@ li {
   overflow: hidden;
 }
 
-.rewards {
-  height: 32rem;
-  overflow: scroll;  
-  text-align: justify;
-  border:1px solid black;
-}
-/* --------------- REWARDS SECTION --------------- */
-
-.reward-title {
-  margin:10px;
-  text-align: center;
-}
-
-
-
-.army-title {
-  margin-bottom:40px;
-  text-align: center;
-}
-.row-army {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-  
-}
-
-.col-3 {
+/* .card-text{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  
-}
+ 
+} */
 
-.col-icone {
-  margin: 10px;
-}
+/* ----------------ARMY SECTION ---------------- */
 
-.download {
+.row-army {
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
+
+}
+
+.row-army-2 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  padding-left: 0;
+}
+.col-11-banner {
+  display: flex;
+  align-items: center;
+}
+
+.txt-army {
+  margin:8px;
+}
+.card {
+  margin-bottom: 20px !important;
+}
+
+.group-icones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 0;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
 }
 
 .google-play {
-  max-width: 20%;
+  width: 20%;
   height: auto;
+  margin-top: 3rem;
 }
 
+/* ----------------CONTACT SECTION ---------------- */
 
-form {
-  width: 50vw;
+.container-form {
+  width:50vw;
+  margin: auto; 
+}
+
+.contact-form {
+  padding: 30px;
+}
+
+.form-name,
+.form-email,
+.form-group {
+  display: flex;
+  justify-content: center;
+}
+
+.form-txt {
+  width:44vw;
   margin: auto;
+  resize: both;
 }
+
+.btn-form {
+  margin-top: 2rem;
+}
+
 
 /*---------- MEDIA QUERIES -----------*/
 
-@media (min-width:576px){
-  .card-deck {
-    flex-flow: row wrap;
-    /* margin-right: -15px;
-    margin-left:-15px; */
+/* ----------- iphone 5 iphone 6,7,8 + , iPhone X ----------- */
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+  .container {
+    padding: 0;
+  }
+
+  .section {
+    margin: 2rem auto 2rem;
+    width: 100vw;
+    /* margin: auto; */
+  }
+
+  .intro {
+    margin: 1rem 0 1rem 0;
+  }
+
+  h1 {
+    letter-spacing: 0;
+  }
+
+  h2 {
+    font-size: 4.8vw;
+  }
+
+  h5 {
+    font-size: 3.2vw;
+  }
+
+  .btn {
+    width: 5rem;
+    font-size: 2vw;
+  }
+
+  .card-body {
+    padding: 20px 0 0 0;
+  }
+
+  .table {
+    display: none;
+  }
+  .col-3-sm-12 {
+    margin: 15px;  
+  }
+
+  .level-block> :nth-child(1),
+  .level-block> :nth-child(2),
+  .level-block> :nth-child(3) {
+    display: none;
+  }
+
+  .level-block {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .row-gollum {
+    margin-top: 2rem;
+  }
+  .card-reward {
+    margin-bottom: 0 !important;
+  }
+
+  .group-icones {
+   display:none;
+  }
+
+  .col-5-download {
+    margin-top: 2rem;
+  }
+
+  .col-11-banner {
+    display: flex;
+    flex-flow:row wrap;
+    align-items: center;
+    padding-left: 15px;
+  }
+
+  .container-form {
+    width:100vw;
+  }
+
+  .form-txt {
+    width:88%;
   }
 }
