@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Antic+Didone|Cormorant+Garamond&display=swap');
 
 body {
   margin: 0;
+  
 }
 
 h2,
@@ -47,7 +49,7 @@ p {
 p,
 ul,
 li {
-  font-family: 'CormorantGaramond-SemiBold';
+  font-family: 'Cormorant Garamond', serif;
 }
 
 ul,
@@ -90,13 +92,28 @@ input {
   font-family: 'Cinzel';
 }
 
+.icon,
+.icon1,
+.col-5-download {
+  cursor: pointer;
+}
 /* --------------- CAROUSEL & TITLE --------------- */
 
 .slider-img {
   border: 1px solid black;
 }
 
+.carousel-item {
+  height: 400px;
+}
 
+.carousel-item img {
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    min-height: 400px;
+}
 /* --------------- NAVBAR --------------- */
 .navbar-brand {
   width: 18vw;
@@ -143,27 +160,64 @@ input {
   font-weight: bolder;
 }
 
-.modal-content {
-  background-color: black;
-  color:#566361;
+/* .card-img-top {
+  overflow: hidden;
+} */
+
+.img-fellows {
+  transition: transform .8s ease;
+  overflow: hidden;
+}
+
+.img-fellows:hover {
+  transform: scale(1.1);
 }
 
 
-.card-text-fellows {
+
+.opacity {
+  opacity: 0.5;
+}
+
+.dead {
+  opacity: 1;
+  color: red;
+  font-weight: bold;
   position: absolute;
-  top: 25%;
-  color: transparent;
+  top:30%;
+  left:30%;
+  z-index: 999;
 }
 
-.card-title-fellows {
-  position: absolute;
-  top: 10%;
-  left:22%;
-  color: white;
+.modal-header,
+.modal-footer {
+  justify-content: center;
 }
 
+.modal-body,
+.modal-header {
+  background: #566361;
+  color:white;
+}
+.modal-header {
+  border-bottom: 0;
+}
+.row-settings {
+  height: 20vh;
+  margin-top: 20px;
+}
+.reward,
+.difficulty,
+.weapon {
+  /* border:1px solid black; */
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+}
 /* ------------- RING SECTION --------------- */
-
+.table {
+  text-align: center;
+}
 .row-gollum {
   display: flex;
   flex-direction: row;
@@ -241,6 +295,14 @@ input {
  
 } */
 
+[data-aos="fade-up"] {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+[data-aos="fade-up"].aos-animate {
+  opacity: 0.3;
+}
 /* ----------------ARMY SECTION ---------------- */
 
 .row-army {
@@ -275,7 +337,7 @@ input {
   padding-left: 0;
 }
 
-.icon {
+.icon1 {
   width: 50px;
   height: 50px;
 }
@@ -314,6 +376,43 @@ input {
   margin-top: 2rem;
 }
 
+/* ------------- FOOTER --------------------*/
+
+.col-follow {
+  padding-right: 0;
+}
+
+.col-legal {
+  padding-left: 0;
+}
+
+.legal-mentions {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.form-newsletter {
+  margin:0;
+  width:200px;
+}
+.form-newsletter::placeholder,
+.form-control::placeholder {
+  font-family: 'Cormorant Garamond', serif;
+}
+.send {
+  width:50px;
+}
+.icon {
+  margin-left: 5px;
+  border-radius: 2px;
+  width:30px;
+  height: 30px;
+}
+
+.youtube {
+  margin-right: 0;
+}
+
 
 /*---------- MEDIA QUERIES -----------*/
 
@@ -329,8 +428,12 @@ input {
     padding: 0;
   }
 
+  .carousel-item {
+    height: 200px;
+  }
+
   .section {
-    margin: 2rem auto 2rem;
+    margin: 1rem auto 1rem;
     width: 100vw;
     /* margin: auto; */
   }
@@ -401,11 +504,26 @@ input {
     padding-left: 15px;
   }
 
+  .contact-form,
   .container-form {
     width:100vw;
   }
 
   .form-txt {
     width:88%;
+  }
+
+  .footer {
+    flex-flow: row wrap;
+    justify-content : center;
+    align-items: center;
+  }
+
+  .form-newsletter {
+    width:100px;
+  }
+
+  .send {
+    width: 30px;
   }
 }

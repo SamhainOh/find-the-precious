@@ -8,6 +8,7 @@
   <script src="https://kit.fontawesome.com/c0d41b3480.js" crossorigin="anonymous"></script>
 
   <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css">
@@ -81,7 +82,7 @@
 
     <div class="section vw-60" id="fellows">
       <h2><span class="number"> 01.</span> FELLOWS</h2>
-      <h4 class="intro">Dangerous fellowship is trying to destroy the Ring...<br />Orcs, Gobblins,
+      <h4 data-aos="zoom-in-up"class="intro">Dangerous fellowship is trying to destroy the Ring...<br />Orcs, Gobblins,
         Ballrogs protect Your
         Master!</h4>
 
@@ -90,13 +91,10 @@
       <div class="row-fellow">
         <div class="card-deck container-fluid">
           <div class="card shadow p-3 mb-5 bg-white rounded">
-            <img src="./assets/images/gandalf-3.jpg" class="card-img-top img-fluid" alt="...">
+            <img src="./assets/images/gandalf-3.jpg" class="card-img-top img-fluid img-fellows" alt="...">
             <div class="card-body">
-              <h5 class="card-title-fellows">Gandalf the grey</h5>
-              <p class="card-text-fellows">
-                  Some quick example text to build on the card title and make up the bulk of the card's
-                  content.
-              </p>
+              <h5 class="card-title">Gandalf the grey</h5>
+
               <div class="card-footer">
                 <button type="button" class="btn btn-outline-dark btn-md rounded-pill mx-auto" data-toggle="modal"
                   data-target="#gandalf">Dangerous</button>
@@ -104,372 +102,412 @@
             </div>
           </div>
           <div class="card shadow-lg p-3 mb-5 bg-white rounded">
-            <img src="./assets/images/Aragorn-2.jpg" class="card-img-top img-fluid" alt="...">
+            <img src="./assets/images/Aragorn-2.jpg" class="card-img-top img-fluid img-fellows" alt="...">
             <div class="card-body">
               <h5 class="card-title">Aragorn</h5>
-              <p class="card-text-fellows">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+
               <div class="card-footer">
                 <button type="button" class="btn btn-outline-dark btn-md rounded-pill mx-auto" data-toggle="modal"
-                  data-target="#gandalf">Most wanted</button>
+                  data-target="#aragorn">Most wanted</button>
               </div>
             </div>
           </div>
-          <div class="card shadow p-3 mb-5 bg-white rounded">
-            <img src="./assets/images/gimli.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card shadow p-3 mb-5 bg-white rounded gimli">
+              <h2 class="dead">DEAD</h2>
+            <img src="./assets/images/gimli.jpg" class="card-img-top img-fluid opacity img-fellows" alt="...">
             <div class="card-body">
               <h5 class="card-title">Gimli</h5>
-              <p class="card-text-fellows">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+             
               <div class="card-footer">
                 <button type="button" class="btn btn-outline-dark btn-md rounded-pill mx-auto" data-toggle="modal"
-                  data-target="#gandalf">Dead</button>
+                  data-target="#gandalf" disabled>Dead</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
 
-    <!-------------------- MODAL SECTION --------------------->
+      <!-------------------- MODAL SECTION --------------------->
 
-    <div class="modal fade" id="gandalf" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">GANDALF</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-              <img src="./assets/images/gandalf-3.jpg" class="img-thumbnail">
+      <div class="modal fade" id="gandalf" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">GANDALF</h5>
+            </div>
+            <div class="modal-body d-flex flex-column">
+              <img src="https://wallpapercave.com/wp/7CaKQc5.jpg" class="img-thumbnail">
+              <div class="row-settings d-flex flex-row justify-content-between">
+              <div class="col-4 reward">
               <p>REWARDS</p>
+              <p>10.000 coins</p>
+            </div>
+            <div class="col-4 difficulty">
               <p>DIFFICULTY</p>
+              <p>HIGH</p>
+            </div>
+            <div class="col-4 weapon">
               <p>WEAPONS</p>
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="aragorn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">ARAGORN</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+              <p>MAGIC WAND</p>
+            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="modal fade" id="gimli" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">GIMLI</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+</div>
+      <div class="modal fade" id="aragorn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">ARAGORN</h5>
+            </div>
+            <div class="modal-body d-flex flex-column">
+              <img src="https://wallpaper.wiki/wp-content/uploads/2017/05/wallpaper.wiki-Aragorn-Wallpaper-for-Desktop-PIC-WPC0011841.jpg" class="img-thumbnail">
+              <div class="row-settings d-flex flex-row justify-content-between">
+              <div class="col-4 reward">
+              <p>REWARDS</p>
+              <p>40.000 coins</p>
+            </div>
+            <div class="col-4 difficulty">
+              <p>DIFFICULTY</p>
+              <p>EXTREME</p>
+            </div>
+            <div class="col-4 weapon">
+              <p>WEAPONS</p>
+              <p>KING SWORD</p>
+            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <hr>
-    <!-------------------- RING CAPABILITIES SECTION -------------------->
+      </div>
+      <hr>
+      <!-------------------- RING CAPABILITIES SECTION -------------------->
 
-    <div class="section vw-60" id="ring">
-      <h2><span class="number">02. </span>RING CAPABILITIES</h2>
-      <h4 class="intro">One Ring to rule them all,<br> One Ring to find them,<br>
+      <div class="section vw-60" id="ring">
+        <h2><span class="number">02. </span>RING CAPABILITIES</h2>
+        <h4 data-aos="zoom-in-up"class="intro">One Ring to rule them all,<br> One Ring to find them,<br>
           One Ring to bring them all and in the darkness bind them</h4>
-      <table class="table table-striped table-dark ">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
+        <table class="table table-striped table-dark ">
+          <thead>
+            <tr>
+              <!-- <th scope="col">#</th> -->
+              <th scope="col">Feature</th>
+              <th scope="col">Description</th>
+              <!-- <th scope="col">Handle</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <!-- <th scope="row">1</th> -->
+              <td>Main</td>
+              <td>One ring to rule them all</td>
+              <!-- <td>@mdo</td> -->
+            </tr>
+            <tr>
+              <!-- <th scope="row">2</th> -->
+              <td>Invisibility</td>
+              <td>You can't see me</td>
+              <!-- <td>@fat</td> -->
+            </tr>
+            <tr>
+              <!-- <th scope="row">3</th> -->
+              <td>Power</td>
+              <td>Destroy the world</td>
+              <!-- <td>@twitter</td> -->
+            </tr>
+          </tbody>
+        </table>
 
-      <!--------------- GOLLUM SECTION -------------->
+        <!--------------- GOLLUM SECTION -------------->
 
-      <div class="row-gollum">
-        <div class="col-3 d-flex justify-content-center d-flex align-items-center  title-gollum ">
-          <h3>WHY IS THE RING SO AWESOME...</h3>
-        </div>
-        <div class="col-6 d-flex justify-content-center d-flex align-items-center txt-gollum">
-          <div class="col-bloquotes">
-            <p class="quote-gollum">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sequi
-              repellendus autem voluptates
-              minima deleniti? Officiis tenetur consequatur, veniam illum quam doloribus libero. Sed, in veritatis!
-              Neque labore fugit delectus?<span class="quote"> My precioouuuuuuussssss</span></p>
+        <div class="row-gollum">
+          <div class="col-3 d-flex justify-content-center d-flex align-items-center  title-gollum ">
+            <h3>WHY IS THE RING SO AWESOME...</h3>
           </div>
-        </div>
-        <div class="col-3 d-flex justify-content-center d-flex align-items-center img-gollum">
-          <img src="./assets/images/gollum.jpg" class="img-fluid rounded-circle " alt="...">
-        </div>
-      </div>
-    </div>
-    <hr>
-    <!-------------------- HUNTERS SECTION -------------------->
-    <!------------- HUNTER PART --------------->
-    <div class="section vw-60" id="best-hunters">
-      <h2><span class="number">03. </span>BEST HUNTERS</h2>
-      <div class="d-flex flex-row flex-nowrap overflow-auto row-hunters">
-        <div class="col-3-sm-12">
-          <div class="card shadow p-3 mb-5 bg-white rounded card-hunter" style="width: 15rem;">
-            <img src="./assets/images/orc-card-1.jpg" class="card-img-top img-fluid" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">ElvesKiller</h5>
-              <ul class="card-text">
-                <li class="level">
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star empty-star"></span>
-                </li>
-              </ul>
+          <div class="col-6 d-flex justify-content-center d-flex align-items-center txt-gollum">
+            <div class="col-bloquotes">
+              <p class="quote-gollum">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sequi
+                repellendus autem voluptates
+                minima deleniti? Officiis tenetur consequatur, veniam illum quam doloribus libero. Sed, in veritatis!
+                Neque labore fugit delectus?<span class="quote"> My precioouuuuuuussssss</span></p>
             </div>
           </div>
-        </div>
-        <div class="col-3-sm-12">
-          <div class="card shadow p-3 mb-5 bg-white rounded card-hunter" style="width: 15rem;">
-            <img src="./assets/images/orc-card-6.jpg" class="card-img-top img-fluid" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">TheAlmighty</h5>
-              <ul class="card-text">
-                <li class="level">
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star empty-star"></span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-3-sm-12">
-          <div class="card shadow p-3 mb-5 bg-white rounded card-hunter" style="width: 15rem;">
-            <img src="./assets/images/orc-card-5.jpg" class="card-img-top img-fluid" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">PraiseTheLord</h5>
-              <ul class="card-text">
-                <li class="level">
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star empty-star"></span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-3-sm-12">
-          <div class="card shadow p-3 mb-5 bg-white rounded card-hunter" style="width: 15rem;">
-            <img src="./assets/images/orc-card-4.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Sauron4Ever</h5>
-              <ul class="card-text">
-                <li class="level">
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star empty-star"></span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-3-sm-12">
-          <div class="card shadow p-3 mb-5 bg-white rounded card-hunter" style="width: 15rem;">
-            <img src="./assets/images/orc-card-3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">HobbitSlayer</h5>
-              <ul class="card-text">
-                <li class="level">
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star empty-star"></span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-3-sm-12">
-          <div class="card shadow p-3 mb-5 bg-white rounded card-hunter" style="width: 15rem;">
-            <img src="./assets/images/orc-card-2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">OrcaEra</h5>
-              <ul class="card-text">
-                <li class="level">
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star empty-star"></span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-3-sm-12">
-          <div class="card shadow p-3 mb-5 bg-white rounded card-hunter" style="width: 15rem;">
-            <img src="./assets/images/orc-card-7.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">IAmTheLord</h5>
-              <ul class="card-text">
-                <li class="level">
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star full-star"></span>
-                  <span class="rating-star empty-star"></span>
-                </li>
-              </ul>
-            </div>
+          <div class="col-3 d-flex justify-content-center d-flex align-items-center img-gollum">
+            <img src="./assets/images/gollum.jpg" class="img-fluid rounded-circle " alt="...">
           </div>
         </div>
       </div>
+      <hr>
+      <!-------------------- HUNTERS SECTION -------------------->
+      <!------------- HUNTER PART --------------->
+      <div class="section vw-60" id="best-hunters">
+        <h2><span class="number">03. </span>BEST HUNTERS</h2>
+        <div class="d-flex flex-row flex-nowrap overflow-auto row-hunters">
+          <div class="col-3-sm-12">
+            <div class="card shadow p-3 mb-5 bg-white rounded card-hunter" style="width: 15rem;">
+              <img src="./assets/images/orc-card-1.jpg" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">ElvesKiller</h5>
+                <ul class="card-text">
+                  <li class="level">
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star empty-star"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-3-sm-12">
+            <div class="card shadow p-3 mb-5 bg-white rounded card-hunter" style="width: 15rem;">
+              <img src="./assets/images/orc-card-6.jpg" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">TheAlmighty</h5>
+                <ul class="card-text">
+                  <li class="level">
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star empty-star"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-3-sm-12">
+            <div class="card shadow p-3 mb-5 bg-white rounded card-hunter" style="width: 15rem;">
+              <img src="./assets/images/orc-card-5.jpg" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PraiseTheLord</h5>
+                <ul class="card-text">
+                  <li class="level">
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star empty-star"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-3-sm-12">
+            <div class="card shadow p-3 mb-5 bg-white rounded card-hunter" style="width: 15rem;">
+              <img src="./assets/images/orc-card-4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sauron4Ever</h5>
+                <ul class="card-text">
+                  <li class="level">
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star empty-star"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-3-sm-12">
+            <div class="card shadow p-3 mb-5 bg-white rounded card-hunter" style="width: 15rem;">
+              <img src="./assets/images/orc-card-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">HobbitSlayer</h5>
+                <ul class="card-text">
+                  <li class="level">
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star empty-star"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-3-sm-12">
+            <div class="card shadow p-3 mb-5 bg-white rounded card-hunter" style="width: 15rem;">
+              <img src="./assets/images/orc-card-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">OrcaEra</h5>
+                <ul class="card-text">
+                  <li class="level">
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star empty-star"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-3-sm-12">
+            <div class="card shadow p-3 mb-5 bg-white rounded card-hunter" style="width: 15rem;">
+              <img src="./assets/images/orc-card-7.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">IAmTheLord</h5>
+                <ul class="card-text">
+                  <li class="level">
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star full-star"></span>
+                    <span class="rating-star empty-star"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <!------------- REWARDS PART --------------->
-      <div class="d-flex flex-row flex-nowrap overflow-auto">
-        <div class="col-12 rewards d-flex align-items-center">
-          <div class="card-reward">
-            <div class="card-body">
-              <h3>REWARDS</h3>
-              <h5 class="reward-title"> I have captured one of them, how do I collect my rewards</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde magnam maiores labore perspiciatis
-                laboriosam soluta mollitia deserunt incidunt numquam, iusto iure fugit sapiente facilis libero
-                praesentium
-                quia minus? Reiciendis.</p>
+        <!------------- REWARDS PART --------------->
+        <div class="d-flex flex-row flex-nowrap overflow-auto">
+          <div class="col-12 rewards d-flex align-items-center">
+            <div class="card-reward">
+              <div class="card-body">
+                <h3>REWARDS</h3>
+                <h5 class="reward-title"> I have captured one of them, how do I collect my rewards</h5>
+                <p data-aos="zoom-in-up"  class="aos-animate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde magnam maiores labore
+                  perspiciatis
+                  laboriosam soluta mollitia deserunt incidunt numquam, iusto iure fugit sapiente facilis libero
+                  praesentium
+                  quia minus? Reiciendis.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <hr>
+      <hr>
 
-    <!-------------------- ARMY SECTION -------------------->
-    <div class="section vw-60" id="join-the-army">
-      <h2><span class="number">04. </span>JOIN THE ARMY</h2>
-      <h4 class="intro"> Join the Dark Army of Mordor, Sauron needs you!</h4>
-      <div class="row-army">
-        <div class="card text-white">
-          <img src="./assets/images/sauron-army.png" class="card-img" alt="...">
-        </div>
-      </div>
-      <div class="row-army-2 container-fluid">
-        <div class="col-1 group-icones">
-          <div class="icon facebook d-flex align-items-center d-flex justify-content-center"
-            style="background-color: #303030">
-            <i class="fab fa-facebook-f fa-2x fa-inverse fa-fw"></i>
-          </div>
-          <div class="icon twitter d-flex align-items-center d-flex justify-content-center"
-            style="background-color: #1DA1F2">
-            <i class="fab fa-twitter fa-2x twitter fa-inverse fa-fw"></i>
-          </div>
-          <div class="icon youtube d-flex align-items-center d-flex justify-content-center"
-            style="background-color:tomato">
-            <i class="fab fa-youtube fa-2x fa-inverse fa-fw"></i>
+      <!-------------------- ARMY SECTION -------------------->
+      <div class="section vw-60" id="join-the-army">
+        <h2><span class="number">04. </span>JOIN THE ARMY</h2>
+        <h4 data-aos="zoom-in-up"class="intro"> Join the Dark Army of Mordor, Sauron needs you!</h4>
+        <div class="row-army">
+          <div class="card text-white">
+            <img src="./assets/images/sauron-army.png" class="card-img" alt="...">
           </div>
         </div>
-        <div class="col-11-banner">
-          <p class="txt-army">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum porro accusantium
-            delectus qui.
-            Recusandae culpa non esse dolorum quae quod tenetur asperiores, corporis voluptate exercitationem.
-            Minus
-            quae qui inventore pariatur?</p>
-          <p class="txt-army">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, eum, dolore repellat
-            molestias
-            commodi
-            iure suscipit labore provident doloribus eius voluptate laboriosam ipsam sit hic incidunt maiores id
-            consequuntur amet.</p>
-        </div>
-      </div>
-      <div class="col-5-download">
-        <img src="./assets/images/PNGIX.com_google-play-store-icon_5960539.png"
-          class="img-fluid rounded mx-auto d-block google-play " alt="..." />
-      </div>
-    </div>
-    <hr>
-
-
-    <!-------------------- CONTACT SECTION -------------------->
-
-    <div class="section vw-60" id="contact">
-      <h2><span class="number">05. </span>CONTACT US</h2>
-      <div class="container-form">
-        <form class="contact-form shadow-lg p-3 mb-5 bg-white rounded">
-          <div class="form-row">
-            <div class="col form-name">
-              <input type="text" class="form-control input-name" placeholder="First name">
+        <div class="row-army-2 container-fluid">
+          <div class="col-1 group-icones">
+            <div class="icon1 facebook d-flex align-items-center d-flex justify-content-center"
+              style="background-color: #303030">
+              <i class="fab fa-facebook-f fa-2x fa-inverse fa-fw"></i>
             </div>
-            <div class="col form-name">
-              <input type="text" class="form-control input-name" placeholder="Last name">
+            <div class="icon1 twitter d-flex align-items-center d-flex justify-content-center"
+              style="background-color: #1DA1F2">
+              <i class="fab fa-twitter fa-2x twitter fa-inverse fa-fw"></i>
+            </div>
+            <div class="icon1 youtube d-flex align-items-center d-flex justify-content-center"
+              style="background-color:tomato">
+              <i class="fab fa-youtube fa-2x fa-inverse fa-fw"></i>
             </div>
           </div>
-          <div class="form-group form-email">
-            <input type="email" class="form-control input-email" id="exampleInputEmail1" aria-describedby="emailHelp"
-              placeholder="Enter your email">
+          <div class="col-11-banner">
+            <p data-aos="zoom-in-up"class="txt-army">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum porro accusantium
+              delectus qui.
+              Recusandae culpa non esse dolorum quae quod tenetur asperiores, corporis voluptate exercitationem.
+              Minus
+              quae qui inventore pariatur?</p>
+            <p data-aos="zoom-in-up"class="txt-army">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, eum, dolore repellat
+              molestias
+              commodi
+              iure suscipit labore provident doloribus eius voluptate laboriosam ipsam sit hic incidunt maiores id
+              consequuntur amet.</p>
           </div>
-          <div class="form-group form-txt">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+        </div>
+        <div class="col-5-download">
+          <img src="./assets/images/PNGIX.com_google-play-store-icon_5960539.png"
+            class="img-fluid rounded mx-auto d-block google-play " alt="..." />
+        </div>
+      </div>
+      <hr>
+
+
+      <!-------------------- CONTACT SECTION -------------------->
+
+      <div class="section vw-60" id="contact">
+        <h2><span class="number">05. </span>CONTACT US</h2>
+        <div class="container-form">
+          <form class="contact-form shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="form-row">
+              <div class="col form-name">
+                <input type="text" class="form-control input-name" placeholder="First name">
+              </div>
+              <div class="col form-name">
+                <input type="text" class="form-control input-name" placeholder="Last name">
+              </div>
+            </div>
+            <div class="form-group form-email">
+              <input type="email" class="form-control input-email" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter your email">
+            </div>
+            <div class="form-group form-txt">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-dark btn-md rounded-pill mx-auto btn-form"
+              id="open-modal">Send</button>
+          </form>
+        </div>
+      </div>
+      <hr>
+
+      <!--------------------- footer ------------------------>
+      <div class="footer d-flex justify-content-between" id="footer">
+        <div class=" col-3 col-legal d-flex justify-content-start align-items-center">
+          <ul class="legal-mentions">
+            <li>Legal mentions</li>
+            <li>About us</li>
+            <li>Reward conditions</li>
+            <li>FAQ's</li>
+          </ul>
+        </div>
+
+        <div class=" col-6 col-copyright d-flex flex-column justify-content-between align-items-center">
+          <p>NEWSLETTER</p>
+          <div class="input-group mb-3r d-flex justify-content-center">
+            <input type="text" class="form-newsletter" placeholder="Email" aria-label="Username"
+              aria-describedby="basic-addon1">
+            <div class="input-group-append">
+              <button class="send btn btn-outline-secondary" type="button"><i class="fas fa-envelope"></i></button>
+            </div>
           </div>
-          <button type="submit" class="btn btn-outline-dark btn-md rounded-pill mx-auto btn-form"
-            id="open-modal">Send</button>
-        </form>
+        </div>
+
+        <div class="col-3 col-follow d-flex flex-column align-items-end justify-content-between">
+          <p class="follow-us">FOLLOW US</p>
+          <div class="follow-icones d-flex flex-row flex-nowrap" style="font-size:0.5rem">
+
+            <div class="icon facebook d-flex align-items-center d-flex justify-content-center"
+              style="background-color: #303030">
+              <i class="fab fa-facebook-f fa-2x fa-inverse fa-fw"></i>
+            </div>
+            <div class="icon twitter d-flex align-items-center d-flex justify-content-center"
+              style="background-color: #1DA1F2">
+              <i class="fab fa-twitter fa-2x fa-inverse fa-fw"></i>
+            </div>
+            <div class="icon youtube d-flex align-items-center d-flex justify-content-center"
+              style="background-color:tomato">
+              <i class="fab fa-youtube fa-2x fa-inverse fa-fw"></i>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </div>
@@ -486,6 +524,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
